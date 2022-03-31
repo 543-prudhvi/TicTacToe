@@ -1,0 +1,37 @@
+
+--------- PROJECT TITLE:TIC TAC TOE GAME -----------------
+
+DESCRIPTION: 		Simple TicTacToe game(3*3) with options to restart and exit.
+
+How to play:  		This game contains 3*3 matrix and each player is given chance to play alternatively.
+			The players are given symbols(oval and cross) each.
+			If a player get a row or coloumn or a diagonal filled with his symbol first, He wins.
+			If both players failed to win i.e no row or coloumn or diagonal is complete at end of the game 
+			it results in a stalemate and respective message is displayed.
+			Players can clear the board and start the game new at any point of time.
+
+Programming Language:	Java is used in programming the application.
+			GUI:Java swing and AWT were used for graphical user interface.
+			
+Sample code:	code snippet:1	for (this.i = 0; this.i < 9; this.i += 1)
+        				this.ch[this.i] = 'B';
+			
+			Explanation: Initially all the cells are give a characters 'B' which means they are empty. 
+
+		code snippet:2	for (this.i = 0; this.i < 3; this.i += 1)//--------checking vertically
+        			{
+            				if ((this.ch[this.i] != 'B') &&
+            				(this.ch[(this.i + 3)] == this.ch[this.i]) && (this.ch[(this.i + 6)] == this.ch[this.i]))
+           				{
+                				new Board().win();
+                				bug = 1;
+            				}
+        			}	
+			
+			Explanation: Checking if the cell is not empty and the cells vertically are of same symbol are not.
+			if the condition is satisfied then window of win message is shown( Board.java ).  
+
+
+How to run the application: RUN THE TicTacToe JAR FILE. 
+ 
+ 
